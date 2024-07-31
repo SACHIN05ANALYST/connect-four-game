@@ -1,0 +1,39 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --divwidth: 20px;
+    --divheight: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0; 
+}
+
+#game {
+    margin: 0 auto;
+}
+
+#turn {
+    font-size: 1.2rem;
+    margin: 1rem 1rem;
+}
+
+#board {
+    border: 1px solid red;
+    width: calc(7*var(--divwidth) + 2px);
+    height: calc(6*var(--divheight) + 2px);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board div {
+    height: var(--divheight);
+    width: var(--divwidth);
+    border: 1px solid blue;
+}
